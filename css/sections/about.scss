@@ -1,0 +1,39 @@
+.about {
+    height: 345px;
+    background: $white;
+    width: 100%;
+}
+
+.about__left {
+    float: left;
+    width: 50%;
+}
+
+.about__prod {
+    padding-top: $padding-top;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: $grey;
+}
+
+.about__text {
+    padding-top: 28px;
+    overflow: auto;
+    height: 150px;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 23px;
+    font-size: 15px;
+    color: $grey;
+}
+
+.about__img {
+    padding-top: $padding-top;
+}
+
+.about__right {
+    float: right;
+}

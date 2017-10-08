@@ -1,0 +1,115 @@
+@mixin input {
+    display: block;
+    border: 1x solid $white;
+    margin-bottom: 20px;    
+    padding: 5px;
+    border-radius: 5px;
+    width: 502px;
+}
+
+.contacts {
+	height: 509px;
+    background: $grey;
+    text-align: center;
+}
+
+.contact__title {
+    margin: 0;
+	padding-top: $padding-top;
+    font-size: 24px;
+    color: $white;
+    font-weight: 400;
+}
+
+.order {
+	display: inline-block;
+    padding: 30px 0 0 249px;
+    float: left;
+    
+}
+
+.input {
+	@include input;
+    
+    &::placeholder {
+        color: $grey;
+    }
+}
+
+.message {
+    @include input;
+    height: 171px;
+    
+       &::placeholder {
+        color: $grey;
+    }
+}
+
+
+.order__button {
+    border: 0;
+    border-radius: 5px;
+	width: 142px;
+    height: 43px;
+    color: $grey;
+    font-weight: 600;
+}
+
+.socials {
+	float: left;
+    padding: 30px 0 0 43px;
+}
+
+.soc {
+    padding-bottom: 18px;
+    text-align: left;
+    
+    &:last-child{
+        padding: 0;
+    }
+}
+
+.soc__text {
+	padding-left: 5px;
+    color: $white;
+}
+
+.soc__img {
+  margin-bottom: -6px;
+}
+
+.soc__share {
+	position: absolute;
+    padding-top: 35px;
+}
+
+.share__link {
+	display: inline-block;
+    width: 44px;
+    height: 42px;
+}
+
+.share__link_tw {
+	background-image: $bg-image;
+    background-position: 0 0;
+}
+
+.share__link_fb {
+	background-image: $bg-image;
+    background-position: -49px 0;
+}
+
+.share__link_in {
+	background-image:$bg-image;
+    background-position: -99px 0;
+}
+
+.share__link_ggl {
+	background-image: $bg-image;
+    background-position: -148px 0;
+}
+
+.share__link_yt {
+	background-image: $bg-image;
+    background-position: 43px 0;
+}
